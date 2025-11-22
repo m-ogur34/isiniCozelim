@@ -68,23 +68,33 @@ const Footer: FC = () => {
               </div>
             </div>
 
-            {/* Sağ Taraf */}
-            <div className='md:col-span-4 col-span-12 border-t md:border-none border-solid border-dark_border sm:flex items-center justify-end md:min-h-25 py-10 shrink-0'>
-              <div className='md:w-3/4 w-full sm:text-start text-center'>
-              <span className='font-bold text-white pb-4 inline-block text-2xl'>
-                E-Bülten
-              </span>
+            <div className='md:col-span-4 col-span-12 border-t md:border-none border-solid border-dark_border sm:flex flex-col items-end justify-center md:min-h-25 py-10 shrink-0'>
+              <div className='w-full sm:text-start text-center'>
+    <span className='font-bold text-white pb-4 inline-block text-2xl'>
+      E-Bülten
+    </span>
                 <p className='text-MistyBlue text-base pb-7 text-white/50'>
-                  Yeniliklerden haberdar olmak için abone olun.
+                  Yeniliklerden ve özel fırsatlardan haberdar olmak için abone olun.
                 </p>
-                <form className='newsletter-form flex rounded-lg sm:w-full w-3/4 sm:mx-0 mx-auto'>
-                  <input
-                      type='email'
-                      placeholder='E-posta adresiniz'
-                      className='p-4 text-base border-transparent rounded-s-lg rounded-e-none! outline-0 focus:border-primary dark:focus:border-primary w-[calc(100%_-_137px)] flex bg-white dark:bg-midnight_text dark:text-white dark:border-solid dark:border dark:border-border_color'
-                  />
-                  <button type='submit' className='p-[0.625rem] text-base font-medium bg-primary text-white border-none cursor-pointer rounded-e-lg outline-0 text-center w-[8.5625rem] hover:bg-blue-700 hover:shadow-none'>
-                    Abone Ol
+
+                <form className='flex flex-col sm:flex-row gap-2 w-full'>
+                  <div className="relative w-full">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      {/* Mail İkonu */}
+                      <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                      </svg>
+                    </div>
+                    <input
+                        type='email'
+                        placeholder='E-posta adresiniz'
+                        className='block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-primary focus:border-primary dark:bg-darkmode dark:border-dark_border dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary'
+                        required
+                    />
+                  </div>
+                  <button type='submit' className='text-white bg-primary hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-4 text-center dark:bg-primary dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors'>
+                    Abone&nbsp;Ol
                   </button>
                 </form>
               </div>
