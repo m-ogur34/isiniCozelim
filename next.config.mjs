@@ -2,15 +2,15 @@
 
 const nextConfig = {
   output: "export",
-  // GitHub Pages repository adınız buraya eklenmeli
-  basePath: "/isiniCozelim",
+  // basePath satırını siliyoruz veya boş bırakıyoruz
+  // basePath: "/isinicozelim",  <-- BU SATIRI SİLİN
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
   env: {
-    // Resim yolları için kullanılan değişkeni de güncelliyoruz
-    NEXT_PUBLIC_BASE_PATH: "/isiniCozelim",
+    // Base path artık boş olmalı çünkü ana domaindeyiz
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
