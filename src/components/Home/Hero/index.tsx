@@ -21,7 +21,7 @@ const Hero = () => {
             </span>
                     </div>
                     <h1 className='text-midnight_text font-bold dark:text-white text-4xl md:text-5xl md:leading-[1.15]'>
-                        Ogur Luxury Solutions <br />
+                        İşini Çözelim <br />
                         <span className="text-primary">İşinize Değer Katar.</span>
                     </h1>
                     <p className='text-grey dark:text-white/70 text-lg font-normal mb-6 leading-relaxed'>
@@ -46,7 +46,7 @@ const Hero = () => {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-full h-full -z-10 bg-[url('/images/hero/line-leyar.svg')] bg-no-repeat bg-contain opacity-50"></div>
                     <Image
                         src={getImgPath('/images/hero/hero-image.png')}
-                        alt='Ogur Luxury Solutions Hizmetleri'
+                        alt='İşini Çözelim Hizmetleri'
                         width={600}
                         height={500}
                         quality={100}

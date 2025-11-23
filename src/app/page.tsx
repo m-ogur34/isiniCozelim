@@ -12,7 +12,7 @@ import Portfolio from "@/components/SharedComponent/portfollio";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Ana Sayfa | Ogur Luxury Solutions",
+    title: "Ana Sayfa | İşini Çözelim",
     description: "Modern yazılım çözümleri ve saha operasyonları.",
 };
 

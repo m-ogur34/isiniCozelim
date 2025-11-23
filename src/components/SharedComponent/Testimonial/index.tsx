@@ -32,7 +32,7 @@ const Testimonial = () => {
           
           <div className='text-center'>
             <strong className='text-lg font-bold text-primary block mb-2'>
-              Ogur Luxury Solutions Ekibi
+              İşini Çözelim Ekibi
             </strong>
             <p className='text-base text-gray dark:text-white/50 '>
               Geleceği Birlikte Tasarlıyoruz

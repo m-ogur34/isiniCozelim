@@ -17,12 +17,12 @@ const Footer: FC = () => {
                 <Link href='/' className='md:block flex justify-center'>
                   <Image
                       src={getImgPath('/images/logo/luxury-solutions-logo.png')}
-                      alt='Ogur Luxury Solutions Logo'
+                      alt='İşini Çözelim Logo'
                       width={200}
                       height={60}
                       style={{ width: 'auto', height: 'auto' }}
                       quality={100}
-                      className="object-contain dark:invert" // Logo dark modda görünmesi için invert eklenebilir veya beyaz logo kullanılmalı
+                      className="object-contain dark:invert"
                   />
                 </Link>
                 <h2 className='text-white py-10 text-[30px] leading-tight font-bold'>
@@ -50,8 +50,8 @@ const Footer: FC = () => {
                 </div>
                 <div className='sm:block flex items-center gap-3'>
                   <p className='text-base font-bold text-white'>E-posta</p>
-                  <Link href='mailto:info@ogurluxurysolutions.com' className='text-xl text-white/50 hover:text-white'>
-                    info@ogurluxurysolutions.com
+                  <Link href='mailto:info@isinicozelim.com' className='text-xl text-white/50 hover:text-white'>
+                    info@isinicozelim.com
                   </Link>
                 </div>
 
@@ -96,7 +96,7 @@ const Footer: FC = () => {
         <div className='text-center gap-4 md:gap-0 flex-wrap p-7 border-t border-solid border-dark_border'>
           <div>
             <p className='text-base text-white/50'>
-              © {new Date().getFullYear()} Tüm hakları saklıdır. <span className='text-white hover:text-primary cursor-pointer'>Ogur Luxury Solutions</span>
+              © {new Date().getFullYear()} Tüm hakları saklıdır. <span className='text-white hover:text-primary cursor-pointer'>İşini Çözelim</span>
             </p>
           </div>
         </div>

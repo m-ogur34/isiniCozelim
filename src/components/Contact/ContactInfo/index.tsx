@@ -24,9 +24,14 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <Link
-                    href='mailto:info@ogurluxurysolutions.com'
-                    className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
-                    info@ogurluxurysolutions.com
+                      href='mailto:info@isinicozelim.com'
+                      className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
+                    info@isinicozelim.com
+                  </Link>
+                  <Link
+                      href='mailto:kariyer@isinicozelim.com'
+                      className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
+                    Başvuru Gönder
                   </Link>
                 </div>
               </div>

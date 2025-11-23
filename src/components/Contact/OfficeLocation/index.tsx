@@ -20,15 +20,14 @@ const Location = () => {
               </div>
               <div className='col-span-3'>
                 <Link
-                  href='mailto:merkez@ogurluxurysolutions.com'
-                  className='sm:text-2xl text-xl text-white font-medium underline block mb-2'>
-                  merkez@ogurluxurysolutions.com
+                    href='mailto:info@isinicozelim.com'
+                    className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
+                  info@isinicozelim.com
                 </Link>
                 <Link
-                  href='tel:02121234567'
-                  className='sm:text-2xl text-xl text-white/80 flex items-center gap-2 hover:text-opacity-100 w-fit'>
-                  <span className='text-white/40!'>Tel:</span>
-                  0 (212) 123 45 67
+                    href='mailto:kariyer@isinicozelim.com'
+                    className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
+                  Başvuru Gönder
                 </Link>
               </div>
             </div>

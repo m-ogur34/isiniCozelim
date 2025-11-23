@@ -34,7 +34,7 @@ const Contactform = () => {
                 <div className='col-span-3'>
                   <span className='text-white/50 text-lg'>E-posta</span>
                   <p className='bg-transparent border-0 text-white text-lg'>
-                    info@ogurluxurysolutions.com
+                    info@isinicozelim.com
                   </p>
                 </div>
                 <div className='col-span-6 pt-8'>

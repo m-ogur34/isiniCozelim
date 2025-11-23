@@ -8,7 +8,7 @@ import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "İletişim | Ogur Luxury Solutions",
+    title: "İletişim | İşini Çözelim",
 };
 
 const ContactPage = () => {

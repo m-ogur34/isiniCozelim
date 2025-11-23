@@ -6,7 +6,7 @@ import Testimonial from "@/components/SharedComponent/Testimonial";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hakkımızda | Ogur Luxury Solutions",
+    title: "Hakkımızda | İşini Çözelim",
     description: "Kurumsal çözümlerimiz ve ekibimiz hakkında bilgi alın.",
 };
 

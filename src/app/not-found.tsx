@@ -3,7 +3,7 @@ import NotFound from "@/components/NotFound";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sayfa Bulunamadı | Ogur Luxury Solutions",
+    title: "Sayfa Bulunamadı | İşini Çözelim",
 };
 
 const ErrorPage = () => {

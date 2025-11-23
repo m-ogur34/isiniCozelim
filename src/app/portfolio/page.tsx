@@ -4,7 +4,7 @@ import PortfolioList from "@/components/portfolio/PortfolioList";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Referanslar | Ogur Luxury Solutions",
+    title: "Referanslar | İşini Çözelim",
     description: "Başarıyla tamamladığımız projeler ve referanslarımız.",
 };
 

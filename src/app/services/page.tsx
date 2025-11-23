@@ -4,7 +4,7 @@ import Services from "@/components/Home/Services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hizmetlerimiz | Ogur Luxury Solutions",
+    title: "Hizmetlerimiz | İşini Çözelim",
     description: "Web tasarım, yazılım ve saha operasyon hizmetlerimiz.",
 };
 
