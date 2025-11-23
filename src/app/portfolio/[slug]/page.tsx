@@ -33,20 +33,24 @@ export default function PortfolioDetail({ params }: { params: { slug: string } }
             />
             <section className="py-20 dark:bg-darkmode">
                 <div className="container mx-auto max-w-6xl px-4">
-                    <div className="rounded-xl overflow-hidden mb-10">
+                    <div className="rounded-xl overflow-hidden mb-10 shadow-lg">
                         <Image
                             src={item.image}
                             alt={item.alt}
                             width={1200}
                             height={600}
-                            className="w-full object-cover"
+                            quality={100}
+                            className="w-full object-cover h-[400px] md:h-[500px]"
                         />
                     </div>
-                    <h2 className="text-3xl font-bold mb-4 text-midnight_text dark:text-white">Proje Detayları</h2>
-                    <p className="text-lg text-grey dark:text-white/60">
-                        {/* Buraya data.tsx'e 'content' alanı ekleyip onu çekebilirsiniz */}
-                        Bu proje {item.info} alanında geliştirilmiştir. (Detaylı açıklama eklenebilir)
-                    </p>
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-3xl font-bold mb-6 text-midnight_text dark:text-white border-b border-gray-200 dark:border-gray-700 pb-4">
+                            Proje Hakkında
+                        </h2>
+                        <p className="text-lg text-grey dark:text-white/70 leading-loose text-justify">
+                            {item.detail}
+                        </p>
+                    </div>
                 </div>
             </section>
         </>
