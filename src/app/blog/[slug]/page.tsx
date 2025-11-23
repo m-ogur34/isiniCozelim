@@ -1,12 +1,10 @@
-// Dosya: src/app/blog/[slug]/page.tsx
-
 import React from "react";
 import { getAllPosts, getPostBySlug } from "@/utils/markdown";
 import markdownToHtml from "@/utils/markdownToHtml";
 import BlogHeader from "@/components/Blog/BlogHeader";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getImgPath } from "@/utils/image"; // EKLENDİ
+import { getImgPath } from "@/utils/image";
 
 export async function generateStaticParams() {
     const posts = getAllPosts(["slug"]);
@@ -15,8 +13,12 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-    const post = getPostBySlug(params.slug, [
+// DEĞİŞİKLİK BURADA: params tipi Promise olarak güncellendi
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+    // Params'ı await ile çözümlüyoruz
+    const resolvedParams = await params;
+
+    const post = getPostBySlug(resolvedParams.slug, [
         "title",
         "date",
         "slug",
@@ -34,13 +36,13 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
     return (
         <>
-            <BlogHeader params={params} />
+            {/* BlogHeader params beklediği için resolvedParams'ı gönderiyoruz */}
+            <BlogHeader params={resolvedParams} />
             <section className="pb-20 dark:bg-darkmode">
                 <div className="container mx-auto max-w-4xl px-4">
                     {post.coverImage && (
                         <div className="mb-10 w-full overflow-hidden rounded-lg">
                             <Image
-                                // GÜNCELLENDİ: getImgPath eklendi
                                 src={getImgPath(post.coverImage)}
                                 alt={post.title || "Blog Görseli"}
                                 width={1000}

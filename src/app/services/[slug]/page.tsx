@@ -4,15 +4,18 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSub from "@/components/SharedComponent/HeroSub";
 
-// Statik export için (GitHub Pages kullanıyorsanız gereklidir)
 export async function generateStaticParams() {
     return Servicebox.map((service) => ({
         slug: service.slug,
     }));
 }
 
-export default function ServiceDetail({ params }: { params: { slug: string } }) {
-    const service = Servicebox.find((s) => s.slug === params.slug);
+// DEĞİŞİKLİK: Fonksiyon 'async' yapıldı ve params tipi Promise oldu
+export default async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) {
+    // Params'ı await ile çözümlüyoruz
+    const { slug } = await params;
+
+    const service = Servicebox.find((s) => s.slug === slug);
 
     if (!service) {
         notFound();
@@ -48,7 +51,6 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
 
                     <div className="prose dark:prose-invert max-w-none text-lg text-grey dark:text-white/70">
                         <p>{service.content}</p>
-                        {/* Buraya daha fazla detay veya form eklenebilir */}
                     </div>
                 </div>
             </section>
