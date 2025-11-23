@@ -2,6 +2,7 @@
 
 import { getImgPath } from "@/utils/image";
 
+// Menü Linkleri
 export const menuItems = [
     { name: "Ana Sayfa", href: "/" },
     { name: "Hakkımızda", href: "/about" },
@@ -10,6 +11,7 @@ export const menuItems = [
     { name: "İletişim", href: "/contact" },
 ];
 
+// Sayaç Verileri (Counter)
 export const count = [
     {
         icon: getImgPath("/images/counter/bag.svg"),
@@ -28,111 +30,92 @@ export const count = [
     },
 ];
 
+// İlerleme Çubukları (Work Progress - Neden Biz?)
 export const Progress = [
     { title: 'Yazılım ve Otomasyon', Progress: 100 },
-    { title: 'Saha Operasyonları', Progress: 95 },
-    { title: 'Danışmanlık', Progress: 90 }
+    { title: 'Saha Operasyonları (Drone & Yalıtım)', Progress: 95 },
+    { title: 'Kurumsal Danışmanlık', Progress: 90 }
 ];
 
+// HİZMETLER (Belirttiğiniz 5 Sektör)
 export const Servicebox = [
     {
         slug: 'web-tasarim',
         icon: getImgPath('/images/services/ux-design-product_1.svg'),
         title: 'Web Tasarım & Yazılım',
-        description: 'Kurumsal kimliğinizi yansıtan, SEO uyumlu ve mobil dostu modern web siteleri.',
-        content: 'İşletmeniz için özel olarak tasarlanmış, hızlı, güvenli ve yönetim panelli web siteleri geliştiriyoruz. E-ticaret, kurumsal tanıtım veya özel web uygulamaları ile dijital varlığınızı güçlendirin.'
+        description: 'Kurumsal kimliğinizi yansıtan, SEO uyumlu, hızlı ve mobil dostu modern web siteleri ve özel yazılım çözümleri.',
+        content: 'İşletmeniz için özel olarak tasarlanmış, yönetim panelli, güvenli web siteleri geliştiriyoruz. E-ticaret sitelerinden kurumsal tanıtım sitelerine kadar dijital varlığınızı güçlendiriyoruz.'
     },
     {
         slug: 'dans-okulu',
         icon: getImgPath('/images/services/ux-design-product_2.svg'),
         title: 'Dans Okulu Otomasyonu',
-        description: 'Öğrenci kayıt, ders programı ve ödeme takibi için kapsamlı yönetim sistemi.',
-        content: 'Dans okulları için özel geliştirdiğimiz yazılım ile devamsızlık takibi, eğitmen maaş hesaplaması ve sınıf yönetimini tek panelden yapın.'
+        description: 'Öğrenci kayıt, ders programı takibi, eğitmen yönetimi ve ödeme sistemlerini tek panelden yönetin.',
+        content: 'Dans okulları, sanat merkezleri ve kurslar için geliştirdiğimiz bu yazılım ile devamsızlık takibi, aidat ödemeleri ve sınıf yoklamalarını kolayca yönetebilirsiniz.'
     },
     {
         slug: 'rent-a-car',
         icon: getImgPath('/images/services/perfomance-optimization.svg'),
-        title: 'Rent a Car Otomasyonu',
-        description: 'Araç kiralama süreçlerinizi, rezervasyonları ve filo bakımını dijitalleştirin.',
-        content: 'Araç müsaitlik durumu, kasko takibi, müşteri kara liste kontrolü ve sözleşme yönetimi ile filonuzu verimli yönetin.'
+        title: 'Rent a Car Yazılımı',
+        description: 'Araç filonuzu, rezervasyonları, sözleşmeleri ve bakım süreçlerini yönetebileceğiniz kapsamlı otomasyon.',
+        content: 'Kiralama süreçlerini dijitalleştirin. Müşteri kara liste kontrolü, araç müsaitlik takvimi, kasko/sigorta hatırlatmaları ve gelir-gider takibi tek ekranda.'
     },
     {
         slug: 'drone-temizlik',
         icon: getImgPath('/images/services/ux-design-product_1.svg'),
-        title: 'Drone ile Cephe Temizliği',
-        description: 'Yüksek katlı binalar için iş güvenliği riskini sıfıra indiren teknolojik temizlik.',
-        content: 'Plazalar ve gökdelenler için iskele gerektirmeyen, hızlı ve güvenli drone destekli dış cephe temizlik hizmeti sunuyoruz.'
+        title: 'Drone ile Plaza Temizliği',
+        description: 'Yüksek katlı binalar ve plazalar için iskele gerektirmeyen, güvenli ve hızlı dış cephe temizliği.',
+        content: 'İnsan hayatını riske atmadan, endüstriyel dronelarımız ile gökdelenlerin ve plazaların cam/cephe temizliğini yapıyoruz. Geleneksel yöntemlere göre 10 kat daha hızlı ve güvenli.'
     },
     {
-        slug: 'yalitim',
+        slug: 'bina-yalitim',
         icon: getImgPath('/images/services/perfomance-optimization.svg'),
         title: 'Bina Yalıtımı',
-        description: 'Enerji tasarrufu sağlayan profesyonel ısı ve ses yalıtımı uygulamaları.',
-        content: 'Binalarınızın enerji verimliliğini artıran, uzun ömürlü mantolama ve izolasyon çözümleri.'
+        description: 'Enerji tasarrufu sağlayan, binanızın ömrünü uzatan profesyonel ısı ve ses yalıtımı uygulamaları.',
+        content: 'Konut ve iş yerlerinizde profesyonel mantolama, ısı ve ses izolasyonu hizmetleri sunuyoruz. Enerji maliyetlerinizi düşürürken konforunuzu artırın.'
     },
 ];
 
+// REFERANSLAR / PROJELER
 export const portfolioinfo = [
     {
         image: getImgPath('/images/portfolio/cozycasa.png'),
         alt: 'Dans Okulu',
-        title: 'Dans Yönetim Sistemi',
-        slug: 'dans-yonetim',
-        info: 'Otomasyon',
+        title: 'Sanat Akademi Yönetim',
+        slug: 'sanat-akademi-yonetim',
+        info: 'Dans Okulu Yazılımı',
         Class: 'md:mt-0'
     },
     {
         image: getImgPath('/images/portfolio/mars.png'),
-        alt: 'Muhasebe',
-        title: 'Bulut Muhasebe',
-        slug: 'bulut-muhasebe',
-        info: 'Finans',
+        alt: 'SkyClean',
+        title: 'SkyClean Drone Ops.',
+        slug: 'skyclean-drone',
+        info: 'Drone Temizlik',
         Class: 'md:mt-24'
     },
     {
         image: getImgPath('/images/portfolio/humans.png'),
-        alt: 'Rent a Car',
-        title: 'Filo Kiralama',
-        slug: 'filo-kiralama',
-        info: 'Yazılım',
+        alt: 'Filo Kiralama',
+        title: 'RentCar Pro',
+        slug: 'rentcar-pro',
+        info: 'Rent a Car Yazılımı',
         Class: 'md:mt-0'
     },
     {
         image: getImgPath('/images/portfolio/roket-squred.png'),
-        alt: 'Temizlik',
-        title: 'SkyClean Drone',
-        slug: 'skyclean-drone',
-        info: 'Operasyon',
+        alt: 'Yalıtım Projesi',
+        title: 'Vadi İstanbul Yalıtım',
+        slug: 'vadi-istanbul-yalitim',
+        info: 'Bina Yalıtımı',
         Class: 'md:mt-24'
     },
     {
         image: getImgPath('/images/portfolio/panda-logo.png'),
-        alt: 'Yalıtım',
-        title: 'Eco İzolatör',
-        slug: 'eco-izolator',
-        info: 'İnşaat',
+        alt: 'Web Sitesi',
+        title: 'Kurumsal Web',
+        slug: 'kurumsal-web',
+        info: 'Web Tasarım',
         Class: 'md:mt-0'
     },
-];
-
-// Sonradan eklediğimiz Blog verileri
-export const BlogData = [
-    {
-        img: "/images/blog/blog-1.jpg",
-        date: "25 Kasım 2023",
-        title: "Dijital Dönüşümde Başarı Stratejileri",
-        content: "İşletmenizi dijital çağa adapte etmek için izlemeniz gereken temel adımlar ve stratejiler."
-    },
-    {
-        img: "/images/blog/blog-2.jpg",
-        date: "20 Kasım 2023",
-        title: "Yazılım Çözümleri ile Verimliliği Artırın",
-        content: "Özel yazılım çözümlerinin iş süreçlerinizi nasıl hızlandırdığını ve maliyetleri nasıl düşürdüğünü keşfedin."
-    },
-    {
-        img: "/images/blog/blog-3.jpg",
-        date: "15 Kasım 2023",
-        title: "Saha Operasyonlarında Teknolojinin Gücü",
-        content: "Drone teknolojisi ve modern ekipmanlarla saha operasyonlarınızı nasıl daha güvenli ve verimli hale getirebilirsiniz."
-    }
 ];

@@ -17,12 +17,12 @@ const Hero = () => {
                     <div className='flex gap-2 items-center'>
                         <span className='w-3 h-3 rounded-full bg-success'></span>
                         <span className='font-medium text-midnight_text text-sm dark:text-white/50'>
-              Teknoloji ve Hizmetin Buluşma Noktası
-            </span>
+                          Teknoloji ve Hizmetin Buluşma Noktası
+                        </span>
                     </div>
                     <h1 className='text-midnight_text font-bold dark:text-white text-4xl md:text-5xl md:leading-[1.15]'>
                         İşini Çözelim <br />
-                        <span className="text-primary">İşinize Değer Katar.</span>
+                        <span className="text-primary">Çözüm Ortağınız.</span>
                     </h1>
                     <p className='text-grey dark:text-white/70 text-lg font-normal mb-6 leading-relaxed'>
                         Modern yazılım çözümlerinden (Web, Dans Okulu, Rent a Car) ileri teknoloji saha operasyonlarına (Drone Temizlik, Yalıtım) kadar işletmeniz için uçtan uca çözümler sunuyoruz.
@@ -44,7 +44,6 @@ const Hero = () => {
 
                 <div className="md:col-span-6 col-span-12 relative flex items-center justify-center">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-full h-full -z-10 bg-[url('/images/hero/line-leyar.svg')] bg-no-repeat bg-contain opacity-50"></div>
-                    {/* YENİ HERO GÖRSELİ BURADA ÇAĞRILIYOR */}
                     <Image
                         src={getImgPath('/images/hero/hero-image.png')}
                         alt='İşini Çözelim Hizmetleri'

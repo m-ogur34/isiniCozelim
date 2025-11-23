@@ -54,7 +54,7 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
               Farklı Sektörlerde Tek Çözüm Ortağınız
             </h2>
             <p className='text-gray dark:text-white/70 text-base font-semibold mb-8'>
-              İşini Çözelim olarak, teknolojiyi ve saha operasyonlarını birleştiriyoruz.
+              Ogur Luxury Solutions olarak, teknolojiyi ve saha operasyonlarını birleştiriyoruz.
               İster bir dans okulu yönetin, ister yüksek katlı bir plazanız olsun;
               ihtiyacınız olan dijital ve fiziksel çözümleri tek bir çatı altında sunuyoruz.
             </p>
