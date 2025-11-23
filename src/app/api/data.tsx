@@ -1,7 +1,9 @@
+// Dosya: src/app/api/data.tsx
+
 import { getImgPath } from "@/utils/image";
 
 export const menuItems = [
-    { name: "Ana Sayfa", href: "/" }, // #home yerine / yapıldı
+    { name: "Ana Sayfa", href: "/" },
     { name: "Hakkımızda", href: "/about" },
     { name: "Hizmetler", href: "/services" },
     { name: "Projeler", href: "/portfolio" },
@@ -32,10 +34,9 @@ export const Progress = [
     { title: 'Danışmanlık', Progress: 90 }
 ];
 
-// Hizmetler - Slug'lar menü ile uyumlu hale getirildi
 export const Servicebox = [
     {
-        slug: 'web-tasarim', // Menüdeki link ile eşleşti
+        slug: 'web-tasarim',
         icon: getImgPath('/images/services/ux-design-product_1.svg'),
         title: 'Web Tasarım & Yazılım',
         description: 'Kurumsal kimliğinizi yansıtan, SEO uyumlu ve mobil dostu modern web siteleri.',
@@ -112,4 +113,26 @@ export const portfolioinfo = [
         info: 'İnşaat',
         Class: 'md:mt-0'
     },
+];
+
+// Sonradan eklediğimiz Blog verileri
+export const BlogData = [
+    {
+        img: "/images/blog/blog-1.jpg",
+        date: "25 Kasım 2023",
+        title: "Dijital Dönüşümde Başarı Stratejileri",
+        content: "İşletmenizi dijital çağa adapte etmek için izlemeniz gereken temel adımlar ve stratejiler."
+    },
+    {
+        img: "/images/blog/blog-2.jpg",
+        date: "20 Kasım 2023",
+        title: "Yazılım Çözümleri ile Verimliliği Artırın",
+        content: "Özel yazılım çözümlerinin iş süreçlerinizi nasıl hızlandırdığını ve maliyetleri nasıl düşürdüğünü keşfedin."
+    },
+    {
+        img: "/images/blog/blog-3.jpg",
+        date: "15 Kasım 2023",
+        title: "Saha Operasyonlarında Teknolojinin Gücü",
+        content: "Drone teknolojisi ve modern ekipmanlarla saha operasyonlarınızı nasıl daha güvenli ve verimli hale getirebilirsiniz."
+    }
 ];

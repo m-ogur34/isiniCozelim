@@ -11,18 +11,19 @@ const Footer: FC = () => {
         <div className='container mx-auto max-w-6xl px-4'>
           <div className='grid md:grid-cols-12 grid-cols-1 sm:grid-cols-12'>
 
-            {/* Sol Taraf */}
+            {/* Sol Taraf - Logo ve Slogan */}
             <div className='md:col-span-4 sm:col-span-6 col-span-12 sm:border-r border-b border-solid border-dark_border flex items-center sm:border-b-0 sm:min-h-25 py-10 shrink-0 '>
               <div className='sm:content-normal sm:text-start text-center content-center sm:w-auto w-full'>
                 <Link href='/' className='md:block flex justify-center'>
+                  {/* Footer Koyu Zemin Olduğu İçin Beyaz Logoyu Kullanıyoruz */}
                   <Image
-                      src={getImgPath('/images/logo/luxury-solutions-logo.png')}
+                      src={getImgPath('/images/logo/isini-cozelim-logo-white.png')}
                       alt='İşini Çözelim Logo'
                       width={200}
                       height={60}
                       style={{ width: 'auto', height: 'auto' }}
                       quality={100}
-                      className="object-contain dark:invert"
+                      className="object-contain"
                   />
                 </Link>
                 <h2 className='text-white py-10 text-[30px] leading-tight font-bold'>
@@ -36,7 +37,7 @@ const Footer: FC = () => {
               </div>
             </div>
 
-            {/* Orta Kısım */}
+            {/* Orta Kısım - İletişim */}
             <div className='md:col-span-4 sm:col-span-6 col-span-12 sm:flex items-center sm:min-h-25 py-10 justify-center shrink-0 md:border-r border-b sm:border-b-0 border-solid border-dark_border'>
               <div className='flex flex-col md:items-start items-center'>
               <span className='text-lg font-bold text-white pb-4 inline-block'>
@@ -62,13 +63,22 @@ const Footer: FC = () => {
                         <Image src={getImgPath('/images/footer/facebook.svg')} alt="Facebook" width={25} height={25} className="opacity-60 group-hover:opacity-100 transition-opacity" />
                       </Link>
                     </li>
-                    {/* Diğer ikonlar buraya */}
+                    <li className='group'>
+                      <Link href='#'>
+                        <Image src={getImgPath('/images/footer/twitter.svg')} alt="Twitter" width={25} height={25} className="opacity-60 group-hover:opacity-100 transition-opacity" />
+                      </Link>
+                    </li>
+                    <li className='group'>
+                      <Link href='#'>
+                        <Image src={getImgPath('/images/footer/linkedin.svg')} alt="Linkedin" width={25} height={25} className="opacity-60 group-hover:opacity-100 transition-opacity" />
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* Sağ Taraf */}
+            {/* Sağ Taraf - Bülten */}
             <div className='md:col-span-4 col-span-12 border-t md:border-none border-solid border-dark_border sm:flex items-center justify-end md:min-h-25 py-10 shrink-0'>
               <div className='md:w-3/4 w-full sm:text-start text-center'>
               <span className='font-bold text-white pb-4 inline-block text-2xl'>

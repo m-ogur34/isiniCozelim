@@ -24,9 +24,9 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <Link
-                      href='mailto:info@isinicozelim.com'
+                      href='mailto:kariyer@isinicozelim.com'
                       className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
-                    info@isinicozelim.com
+                    kariyer@isinicozelim.com
                   </Link>
                   <Link
                       href='mailto:kariyer@isinicozelim.com'
@@ -53,7 +53,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <Link
-                    href='mailto:kariyer@ogurluxurysolutions.com'
+                    href='mailto:kariyer@isinicozelim.com'
                     className='text-primary text-base font-medium flex items-center gap-3 group hover:text-midnight_text dark:hover:text-white'>
                     Başvuru Gönder
                   </Link>
@@ -71,7 +71,7 @@ const ContactInfo = () => {
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
               className='rounded-lg w-full border-0'
-              title="Ogur Luxury Solutions Ofis Haritası"
+              title="İşini Çözelim Ofis Haritası"
             ></iframe>
           </div>
         </div>

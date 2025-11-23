@@ -44,6 +44,7 @@ const Hero = () => {
 
                 <div className="md:col-span-6 col-span-12 relative flex items-center justify-center">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-full h-full -z-10 bg-[url('/images/hero/line-leyar.svg')] bg-no-repeat bg-contain opacity-50"></div>
+                    {/* YENİ HERO GÖRSELİ BURADA ÇAĞRILIYOR */}
                     <Image
                         src={getImgPath('/images/hero/hero-image.png')}
                         alt='İşini Çözelim Hizmetleri'

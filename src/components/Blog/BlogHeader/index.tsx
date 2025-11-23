@@ -1,27 +1,24 @@
 // Dosya: src/components/Blog/BlogHeader/index.tsx
 
-import { getAllPosts, getPostBySlug } from "@/utils/markdown";
-import markdownToHtml from "@/utils/markdownToHtml";
+import { getPostBySlug } from "@/utils/markdown";
 import { format } from "date-fns";
 import { tr } from "date-fns/locale";
 import Image from "next/image";
+import { getImgPath } from "@/utils/image"; // EKLENDİ
 
 type Props = {
     params: { slug: string };
 };
 
 export default async function BlogHead({ params }: Props) {
-    // params.slug'ı doğrudan kullanın, getAllPosts çağırmaya gerek yok.
     const post = getPostBySlug(params.slug, [
         "title",
         "author",
         "authorImage",
-        "content",
         "coverImage",
         "date",
     ]);
 
-    // Post bulunamazsa hata vermemesi için kontrol
     if (!post.title) {
         return <div className="pt-44 text-center">Yazı bulunamadı.</div>;
     }
@@ -49,7 +46,8 @@ export default async function BlogHead({ params }: Props) {
                         <div className="col-span-12 md:col-span-4 md:flex md:justify-end">
                             <div className="flex items-center gap-4 bg-white dark:bg-darklight p-4 rounded-xl shadow-sm border border-border dark:border-dark_border w-fit">
                                 <Image
-                                    src={post.authorImage || "/images/blogdetail-page/silicaman.png"}
+                                    // GÜNCELLENDİ: getImgPath kullanıldı
+                                    src={getImgPath(post.authorImage || "/images/blogdetail-page/silicaman.png")}
                                     alt="Yazar"
                                     className="rounded-full object-cover"
                                     width={60}

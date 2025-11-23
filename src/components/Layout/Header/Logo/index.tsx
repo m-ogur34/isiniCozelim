@@ -7,21 +7,21 @@ const Logo: React.FC = () => {
         <Link href="/" className="flex items-center">
             {/* Light Mod (Aydınlık) Logosu */}
             <Image
-                // BURAYI GÜNCELLEYİN: Yeni logo dosyanızın adı ile değiştirin
-                src={getImgPath("/images/logo/luxury-solutions-logo.png")}
+                src={getImgPath("/images/logo/isini-cozelim-logo.png")}
                 alt="İşini Çözelim Logo"
-                width={250}
-                height={160}
+                width={180} // Genişlik değerini biraz düşürdük
+                height={60} // Yükseklik değerini oranladık
+                // GÜNCELLEME: 'h-32' yerine 'h-12' yapıldı.
                 className='dark:hidden w-auto h-12 object-contain'
             />
 
             {/* Dark Mod (Karanlık) Logosu */}
             <Image
-                // BURAYI GÜNCELLEYİN: Yeni logo dosyanızın adı ile değiştirin
-                src={getImgPath("/images/logo/luxury-solutions-logo.png")}
+                src={getImgPath("/images/logo/isini-cozelim-logo-white.png")}
                 alt="İşini Çözelim Logo"
-                width={250}
-                height={160}
+                width={180}
+                height={60}
+                // GÜNCELLEME: 'h-32' yerine 'h-12' yapıldı.
                 className='dark:block hidden w-auto h-12 object-contain'
             />
         </Link>

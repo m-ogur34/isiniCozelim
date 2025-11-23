@@ -4,18 +4,18 @@ import React from "react";
 import Image from "next/image";
 import { Blog } from "@/types/blog";
 import { format } from "date-fns";
-import { tr } from "date-fns/locale"; // Türkçe tarih formatı için
+import { tr } from "date-fns/locale";
 import Link from "next/link";
+import { getImgPath } from "@/utils/image"; // EKLENDİ
 
 const BlogCard = ({ blog }: { blog: Blog }) => {
     const { title, coverImage, excerpt, date, slug } = blog;
 
-    // Tarih formatını güvenli hale getirelim
     let formattedDate = "";
     try {
         formattedDate = format(new Date(date), "dd MMM yyyy", { locale: tr });
     } catch (e) {
-        formattedDate = date; // Hata olursa ham tarihi göster
+        formattedDate = date;
     }
 
     return (
@@ -23,7 +23,8 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
             <div className="mb-6 overflow-hidden rounded-lg relative h-64 w-full">
                 <Link href={`/blog/${slug}`} aria-label="blog cover" className="block h-full">
                     <Image
-                        src={coverImage || "/images/blog/blog_1.png"} // Varsayılan resim eklendi
+                        // GÜNCELLENDİ: getImgPath kullanıldı
+                        src={getImgPath(coverImage || "/images/blog/blog_1.png")}
                         alt={title || "Blog görseli"}
                         className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
                         width={408}

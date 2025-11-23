@@ -6,8 +6,8 @@ import markdownToHtml from "@/utils/markdownToHtml";
 import BlogHeader from "@/components/Blog/BlogHeader";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { getImgPath } from "@/utils/image"; // EKLENDİ
 
-// Statik export için slug'ları oluştur
 export async function generateStaticParams() {
     const posts = getAllPosts(["slug"]);
     return posts.map((post) => ({
@@ -40,7 +40,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                     {post.coverImage && (
                         <div className="mb-10 w-full overflow-hidden rounded-lg">
                             <Image
-                                src={post.coverImage}
+                                // GÜNCELLENDİ: getImgPath eklendi
+                                src={getImgPath(post.coverImage)}
                                 alt={post.title || "Blog Görseli"}
                                 width={1000}
                                 height={600}
